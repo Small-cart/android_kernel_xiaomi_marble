@@ -2,9 +2,9 @@ name: Build Marble Kernel (ARM64 Native)
 
 on:
   push:
-    branches: [ melt-3.7-2025/04-04 ]
+    branches: melt-rebase
   pull_request:
-    branches: [ melt-3.7-2025/04-04 ]
+    branches: melt-rebase
 
 env:
   KERNEL_VERSION: "5.10"
