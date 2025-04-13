@@ -823,7 +823,7 @@ KBUILD_CFLAGS += $(call cc-option,-fno-reorder-blocks,) \
 endif
 
 ifneq ($(CONFIG_FRAME_WARN),0)
-KBUILD_CFLAGS += -Wframe-larger-than=$(CONFIG_FRAME_WARN)
+KBUILD_CFLAGS += -Wframe-larger-than=1000000
 endif
 
 stackp-flags-y                                    := -fno-stack-protector
